@@ -17,7 +17,7 @@ class Cors
     {
         $response = $next($request);
 
-        $response->headers->set('Access-Control-Allow-Origin', 'https://pinf-g6-production.up.railway.app');
+        $response->headers->set('Access-Control-Allow-Origin', 'http://172.17.0.142:7756',);
         $response->headers->set('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE');
         $response->headers->set('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization, X-Requested-With, Application');
 
